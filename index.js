@@ -110,11 +110,11 @@ function downtest(){
 	inittest();
 };
 function minusdata(){
-	datas = datas.slice(0,1);
+	datas = datas.slice(0,datas.length-1);
 	document.getElementById('data').removeChild(document.getElementById('data').childNodes[0]);
 }
 function minustest(){
-	tests = tests.slice(0,1);
+	tests = tests.slice(0,tests.length-1);
 	document.getElementById('test').removeChild(document.getElementById('test').childNodes[0]);
 }
 function check(){
