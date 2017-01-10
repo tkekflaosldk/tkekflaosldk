@@ -109,6 +109,14 @@ function downtest(){
 	// server down string
 	inittest();
 };
+function minusdata(){
+	datas = datas.slice(0,1);
+	document.getElementById('data').removeChild(document.getElementById('data').childNodes[0]);
+}
+function minustest(){
+	tests = tests.slice(0,1);
+	document.getElementById('test').removeChild(document.getElementById('test').childNodes[0]);
+}
 function check(){
 		if(datas.length==0||tests.length==0) {
  		 w3wresult.innerText = 0+"%";
